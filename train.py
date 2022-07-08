@@ -9,7 +9,7 @@ def create_meters(method_name):
     # create meters
     meters = {}
     if 'lirr' == method_name.lower():
-        meters['src_cls_loss'] = AverageMeter('src_cls')
+        meters['src_cls_loss'] = AverageMeter('src_cls')# defined in the utils utils.py
         meters['tgt_cls_loss'] = AverageMeter('tgt_cls')
         meters['transfer_loss'] = AverageMeter('transfer')
         meters['env_loss'] = AverageMeter('env')
